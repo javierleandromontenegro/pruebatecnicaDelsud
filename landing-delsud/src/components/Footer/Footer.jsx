@@ -12,6 +12,13 @@ const Footer = () => {
     
         const [email, setEmail] = useState("");
         const [error, setError] = useState("");
+        const [error1 , setError1] = useState({
+          names : "",
+          tel : "",
+          mail : "",
+          msj : "", 
+      
+        })
 
       const [mail , setMail]= useState("");
       const [names , setNames]= useState("");
@@ -45,7 +52,13 @@ const Footer = () => {
             let name = event.target.name 
             
             if(name == "mail" ) { 
+              console.log("entro")
               setMail(event.target.value);
+              if (!validateEmail(event.target.value)) {
+                   setError1({...error1 , [event.target.name] : "Email no válido"});
+                 } else {
+                   setError1({...error1 , [event.target.name] : ""});
+                 }
               }
 
               if(name == "names" ) { 
@@ -64,7 +77,8 @@ const Footer = () => {
             // } else {
             //   setError("");
             // }
-            console.log(mail, names, msj , tel)
+            console.log(error1)
+            console.log("se va a submitear con el siguiente mail ", mail, "y nombre", names, "y mensaje" ,msj , "y telefono" , tel)
           }
 
 const handleChange = (event) => {
@@ -158,17 +172,17 @@ return (
             <Box className={styles.boxinput}>
             <label> Nombre</label>
             <input name="names" value={names} type="text" className={styles.inputfield}/>
-            {error && <p className={styles.error1} >{error}</p>}
+            {/* {error && <p className={styles.error1} >{error}</p>} */}
             </Box>
             <Box className={styles.boxinput}>
             <label> E-mail</label>
             <input name="mail" value={mail} type="text" className={styles.inputfield}/>
-            {error && <p className={styles.error1} >{error}</p>}
+            {/* {error1?.mail && <p className={styles.error1} >{error.mail}</p>} */}
             </Box>
             <Box className={styles.boxinput}>
             <label> Telefono</label>
             <input name="tel" value={tel} type="number" className={styles.inputfield}/>
-            {error && <p className={styles.error1} >{error}</p>}
+            {/* {error && <p className={styles.error1} >{error}</p>} */}
             </Box>
 
 
