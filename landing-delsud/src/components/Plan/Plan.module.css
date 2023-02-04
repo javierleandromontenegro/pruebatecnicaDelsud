@@ -1,0 +1,62 @@
+.h1s{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233,233,233);
+    height : 35rem;
+    padding-top: 3rem;
+    
+}
+
+.divider1 {
+    
+    border-radius: 5%;
+  height: 2px;
+  background-color: rgb(177,186,185);
+  width: 84%;
+
+}
+
+.imgtext{
+    margin-top : 4rem;
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text1{
+    display :flex;
+    flex-direction: column;
+    text-align: start;
+    width: 35rem;
+}
+
+.text2{
+    margin-bottom: -0.5rem;
+}
+
+.text4 {
+    margin-bottom: -0.5rem;
+    font-weight: 200;
+}
+
+.button12{
+    margin-top:  2rem;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .button12:hover {
+    transform: scale(1.1);
+    background-color: rgb(49, 57, 49);
+  
+  } 

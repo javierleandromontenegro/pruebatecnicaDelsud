@@ -1,0 +1,23 @@
+.detailsCont{
+    
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bolder{
+    margin-top: -0.05rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom :  -0.9rem;
+}
+
+
+.text1{
+font-size : 1rem;
+font-weight: 100;
+}

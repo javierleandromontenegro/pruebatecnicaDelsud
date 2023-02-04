@@ -1,0 +1,97 @@
+.maxContainer{
+    display : flex;
+    height: 27rem;
+    background-color: rgb(233,233,233);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 5rem;
+    width: 40rem;
+    height: 24rem;
+   
+  }
+  
+
+  .imagen{
+    min-width: 49rem;
+width: 50rem;
+max-height: 24rem;
+
+  }
+
+
+  .contdis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+
+ .text2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-left: -5rem;
+    margin-right: 4rem;
+    max-height: 24rem;
+    width : 22rem;
+    height: 24rem;
+    background-color:rgb(132, 137, 136);
+ }
+
+
+.text3{
+    
+    font-weight: 600;
+    padding-left :3rem;
+    color : white;
+   
+}
+
+
+.text4{
+    margin-top : 3rem;
+    font-weight: 400;
+    padding-left :3rem;
+    color : white;
+    margin-bottom : -2rem;
+}
+
+.text5{
+    width : 70%;
+    margin-top : -1rem;
+    font-weight: 400;
+    padding-left :3rem;
+    color : white;
+    margin-bottom : -2rem;
+    text-align: start;
+}
+
+.button1{
+   
+        background-color: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-align: center;
+        box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease-in-out;
+        margin-top : 5rem;
+        margin-left :3rem;
+        cursor : pointer
+}
+
+.button1:hover {
+    
+    color : rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+  }

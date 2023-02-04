@@ -1,15 +1,18 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import LandingPage from './components/LandingPage/LandingPage'
 
 function App() {
   return (
         <BrowserRouter> 
        <div className="App">
+        <NavBar/>
         <Switch>
-            <Route  path="/" component={NavBar} />
-        {/* <Route exact path="/home" component={ Home } />
-        <Route exact strict path="*" component={ Error1 } /> */}
+            
+            <Route   path="/" component={LandingPage} />
+
+       
         </Switch>
           
     </div>

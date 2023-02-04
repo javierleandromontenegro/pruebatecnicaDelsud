@@ -1,0 +1,252 @@
+.style1{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("https://i.postimg.cc/dVrgpxZv/plane.png");
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+  width: 615px;
+  height: 451px;
+  /* left: 0px;
+  top: -94px; */
+  
+  
+}
+
+.modal{
+   outline: none;
+}
+
+
+
+
+.transparent{
+    position: absolute;
+width: 441px;
+height: 360px;
+left: 95px;
+top: 80px;
+
+background: #d3cccc37;
+}
+
+.semihr{
+position: absolute;
+width: 350px;
+height: 0px;
+left: 155px;
+top: 209px;
+
+border: 1px solid #000000;
+}
+
+
+.semihr2 {
+    position: absolute;
+width: 332px;
+height: 0px;
+left: 152px;
+top: 87px;
+
+border: 1px solid #000000;
+}
+
+.text1{
+    position: absolute;
+width: 275px;
+height: 75px;
+left: 198px;
+top: 50px;
+
+;
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 77px;
+text-transform: uppercase;
+font-feature-settings: 'tnum' on, 'lnum' on, 'cpsp' on, 'dnom' on;
+
+color: #000000;
+font-variation-settings: 'slnt' 0;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.text2{
+    position: absolute;
+width: 308px;
+height: 26px;
+left: 161px;
+top: 208px;
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+text-transform: uppercase;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #000000;
+}
+
+.semihr3{
+    position: absolute;
+width: 332px;
+height: 61px;
+left: 165px;
+top: 270px;
+
+background: #000000;
+}
+
+.text3{
+    
+position: absolute;
+width: 281px;
+height: 59px;
+left: 185px;
+top: 232px;
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 49px;
+text-align: center;
+text-transform: uppercase;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #F5F5F5;
+}
+
+
+.text4{
+    position: absolute;
+width: 291px;
+height: 35px;
+left: 166px;
+top: 331px;
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #000000;
+}
+
+
+.text5{
+    position: absolute;
+width: 291px;
+height: 35px;
+left: 161px;
+top: 361px;
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #000000;
+}
+
+.cruz{
+    position: absolute;
+width: 22px;
+height: 9px;
+left: 620px;
+top: -2px;
+
+cursor : pointer;
+font-style: normal;
+font-weight: 100;
+font-size: 30px;
+line-height: 29px;
+text-align: center;
+text-transform: lowercase;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #000000;
+}
+
+
+
+.customInput {
+    position: absolute;
+    /* width: 291px;
+    height: 35px; */
+    left: 50px;
+    top: 420px;
+    min-width: 26rem;
+    background-color: rgba(51, 51, 51, 0.663);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+   
+    transition: all 0.3s ease-in-out;
+    margin-bottom : 1rem;
+  }
+  
+  .customInput:focus {
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .customInput:hover {
+    background-color: #444;
+    cursor: pointer;
+  }
+
+
+  .error{
+    position: absolute;
+
+    left: 161px;
+    top: 480px;
+    margin-top : -1rem;
+    color : red;
+}
+
+.button1{
+    position: absolute;
+    
+    left: 500px;
+    top: 420px;
+    background-color: rgb(129, 124, 124);
+    color: rgb(10, 9, 9);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+   width: fit-content;
+    cursor : pointer
+}
+
+.button1:hover {
+
+color : rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+transform: scale(1.1);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+font-weight: 600;
+}

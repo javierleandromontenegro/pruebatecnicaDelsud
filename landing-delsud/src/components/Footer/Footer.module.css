@@ -1,0 +1,277 @@
+.container{
+    height: 34rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+        justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+   width : 26rem;
+
+}
+
+.logotextcont{
+    display: flex;
+    flex-direction: column;
+}
+
+.logotext{
+
+color :white;
+margin-left : 2.2rem;
+font-size: 0.8rem;
+margin-top : -1rem;
+text-align: start;
+}
+
+.logotext1{
+text-align: start;
+    color :white;
+    margin-left : 2.2rem;
+    margin-top: 3.5rem;
+    font-weight: 500;
+    
+    }
+
+.imgl{
+   margin-left: 2rem;
+   margin-top: 3rem;
+}
+
+.leftcont{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.viviendas{
+    text-align: start;
+        color :white;
+        margin-left : 2.2rem;
+       
+        font-weight: 500;
+        
+        }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    color :white;
+    margin-left: 2.2rem;
+}
+
+.customInput {
+    min-width: 26rem;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    width: 26rem;
+    transition: all 0.3s ease-in-out;
+    margin-bottom : 1rem;
+  }
+  
+  .customInput:focus {
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .customInput:hover {
+    background-color: #444;
+    cursor: pointer;
+  }
+
+  .submitButton {
+   padding-left: 2px;
+    width : fit-content;
+       background-color: rgb(89, 89, 89);
+    color: #fff;
+  }
+
+  .submitButton:hover {
+    
+      background-color: #555;
+    }
+  
+
+    .textsub{
+        text-align: start;
+        color :white;
+        margin-left : 2.2rem;
+       font-size: 0.8rem;
+     font-weight: 200;
+     width: 26rem;
+        
+    }
+
+    .news{
+        display : flex;
+        flex-direction: column;
+    }
+
+    .error{
+        margin-top : -1rem;
+        color : red;
+    }
+
+    .icons2{
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+                color: white;
+                align-items: flex-start;
+        justify-content: center;
+        margin-left: 2.2rem;
+    }
+
+.contact {
+    text-align: start;
+    color :white;
+    
+   
+    font-weight: 400;
+}
+
+.button1{
+   
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+   width: fit-content;
+    cursor : pointer
+}
+
+.button1:hover {
+
+color : rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+transform: scale(1.1);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+.formcont{
+   
+    
+    height: 34rem;
+    color: white;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.infoform{
+   
+    border-radius: 4px;
+    display: flex;
+    box-shadow: 5px 5px 20px rgb(109 109 109);
+    width: 38rem;
+    height: 10rem;
+    background-color: rgb(47 47 47);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.formmigrado{
+   height: 19rem;
+    width: 38rem;
+    box-shadow: 5px 5px 20px rgb(109 109 109);
+    
+   background-color: rgb(47 47 47);
+
+}
+
+.textinfo{
+    margin-top : -0.6rem;
+    padding: 0.8rem;
+}
+
+.inputfield {
+    background-color: #9d8e8e;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 15rem;
+    outline: none;
+    }
+
+    .inputform{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .boxinput{
+height: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .form1{
+        display : flex;
+        flex-direction: row;
+        padding-left: 1rem;
+    }
+
+    .inputform2{
+        margin-top : 0.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .boxinput2{
+        margin-left : 2rem;
+        height: 15rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .inputfield2 {
+                background-color: #9d8e8e;
+                border: none;
+                padding: 10px;
+                font-size: 16px;
+                width: 15rem;
+                outline: none;
+                height: 10rem;
+                text-align : start
+                }
+
+
+                .error1{
+                    margin-top : -0.2rem;
+                    color : red;
+                }

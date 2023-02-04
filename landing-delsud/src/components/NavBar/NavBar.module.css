@@ -1,0 +1,48 @@
+
+.cont{
+  width: 100vw;
+}
+
+
+/* Hasta la siguiente anotacion, todo lo que esta debajo es respecto a los button del navbar , su estilo sus hover etc  */
+
+.navButton{
+            color: grey;
+            position: relative;
+            text-decoration: none;
+            font-weight: bold;
+      }
+
+.navButton:hover {
+        color: black;
+        background-color: transparent !important;
+      }
+      
+      .navButton::after {
+        color: grey;
+        background-color: transparent !important;
+      }
+      
+.navButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 1.8px;
+    background-color: rgb(44, 42, 42);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    width: 75%;
+    margin-left: -37.5%;
+      }
+
+.navButton:hover::before {
+    transform: scaleX(1);
+}
+
+
+ /*  Esto es para quitar el hover que viene por defecto en material con los button  */
+.MuiButton-root:hover {
+    background-color: transparent !important;
+  }
