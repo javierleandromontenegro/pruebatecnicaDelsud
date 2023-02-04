@@ -122,10 +122,10 @@ return (
         <h3 className={styles.contact}>CONTACTO</h3>
         <Box>
 
-           <FacebookIcon sx={{marginRight : "2rem"}} />
-            <InstagramIcon sx={{marginRight : "2rem"}}/>
-            <WhatsAppIcon sx={{marginRight : "2rem"}}/>
-            <LocationOnIcon sx={{marginRight : "2rem"}}/>
+           <FacebookIcon sx={{ cursor: "pointer", marginRight : "2rem"}} />
+            <InstagramIcon sx={{cursor: "pointer", marginRight : "2rem"}}/>
+            <WhatsAppIcon sx={{cursor: "pointer", marginRight : "2rem"}}/>
+            <LocationOnIcon sx={{cursor: "pointer", marginRight : "2rem"}}/>
         </Box>
                     </Box>
 

@@ -50,6 +50,7 @@ text-align: start;
 
 
 .viviendas{
+    cursor :pointer;
     text-align: start;
         color :white;
         margin-left : 2.2rem;
