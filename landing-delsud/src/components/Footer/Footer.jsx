@@ -13,19 +13,59 @@ const Footer = () => {
         const [email, setEmail] = useState("");
         const [error, setError] = useState("");
 
+      const [mail , setMail]= useState("");
+      const [names , setNames]= useState("");
+      const [tel , setTel]= useState("");
+      const [msj , setMsj]= useState("");
+
      const validateEmail =(email) => {
             const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return regex.test(email);
           }
 
         const handleSubmit = (event) => {
-        //validar con if 
+       
           event.preventDefault();
           console.log(`Subscribed with email: ${email}`);
           setEmail("");
         };
 
-       
+        const handleSubmit2 = (event) => {
+          //validar con if 
+            event.preventDefault();
+           
+            console.log(`Subscribed with email: ${email}`);
+            setEmail("");
+          };
+
+          const handleChange2 = (event) => {
+            event.preventDefault();
+            
+            let value = event.target.value
+            let name = event.target.name 
+            
+            if(name == "mail" ) { 
+              setMail(event.target.value);
+              }
+
+              if(name == "names" ) { 
+                setNames(event.target.value);
+                }
+                
+            if(name == "tel" ) { 
+              setTel(event.target.value);
+              }
+              
+            if(name == "msj" ) { 
+              setMsj(event.target.value);
+              }
+            // if (!validateEmail(event.target.value)) {
+            //   setError("Email no válido");
+            // } else {
+            //   setError("");
+            // }
+            console.log(mail, names, msj , tel)
+          }
 
 const handleChange = (event) => {
   setEmail(event.target.value);
@@ -113,21 +153,21 @@ return (
 
     </Box>
     <Box className={styles.formmigrado}>
-        <form className={styles.form1}>
+        <form  onChange={handleChange2} className={styles.form1}>
             <Box className={styles.inputform}>  
             <Box className={styles.boxinput}>
             <label> Nombre</label>
-            <input type="text" className={styles.inputfield}/>
+            <input name="names" value={names} type="text" className={styles.inputfield}/>
             {error && <p className={styles.error1} >{error}</p>}
             </Box>
             <Box className={styles.boxinput}>
             <label> E-mail</label>
-            <input type="text" className={styles.inputfield}/>
+            <input name="mail" value={mail} type="text" className={styles.inputfield}/>
             {error && <p className={styles.error1} >{error}</p>}
             </Box>
             <Box className={styles.boxinput}>
             <label> Telefono</label>
-            <input type="number" className={styles.inputfield}/>
+            <input name="tel" value={tel} type="number" className={styles.inputfield}/>
             {error && <p className={styles.error1} >{error}</p>}
             </Box>
 
@@ -137,12 +177,12 @@ return (
             <Box className={styles.inputform2}>  
             <Box className={styles.boxinput2}>
             <label> Mensaje</label>
-            <textarea placeholder="Escriba aqui su mensaje" className={styles.inputfield2}/>
+            <textarea name="msj" value={msj} placeholder="Escriba aqui su mensaje" className={styles.inputfield2}/>
             </Box>
             </Box>
             <button className={styles.button1}
         type="submit"
-            onClick={handleSubmit}
+            onClick={handleSubmit2}
       >
         Suscribirse
       </button>
